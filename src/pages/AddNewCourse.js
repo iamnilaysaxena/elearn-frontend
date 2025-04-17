@@ -19,7 +19,7 @@ const AddNewCourse = () => {
       lessons: lessonsArray
     };
 
-    axios.post('http://localhost:5256/api/Course', courseData)
+    axios.post('https://elearnbe.azurewebsites.net/api/Course', courseData)
       .then(response => {
         setMessage('Course added successfully!');
         setCourseName('');
